@@ -1,0 +1,25 @@
+/*menu-cabecera*/
+body{
+	font-family: 'Raleway', sans-serif;
+}
+canvas {
+	margin:5px 0px 15px 0px;
+}
+.bg-dark {
+    border-radius:.3rem;
+}
+.borde_1{
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	margin:.5rem 0 .5rem 0;
+}
+.tituo_1{
+	margin:3rem .0rem .2rem .3rem;
+}
+.fecha{
+	color:grey;
+	font-size:9px;
+}
+.card {
+	border: 1px solid rgba(0,0,0,.225) !important;
+}
