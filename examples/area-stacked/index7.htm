@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highcharts Example</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<script src="../../code/highcharts.js"></script>
+<script src="../../code/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<!--
+todo Casos Confirmados de Dengue - Por Edad
+X  meses y años
+Y  #confirmados
+líneas  (usar rangos de edades del MSPBS)-->
+
+<script type="text/javascript">
+    Highcharts.chart('container', {
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: 'Casos Confirmados de Dengue - Por Edad'
+        },
+        subtitle: {
+            text: 'Source: verificar'
+        },
+        xAxis: {
+            categories: ['2010_1', '2010_2', '2010_3', '2010_4', '2010_5', '2010_6', '2010_7', '2010_8', '2010_9', '2010_10', '2010_11', '2010_12', '2011_1', '2011_2', '2011_3', '2011_4', '2011_5', '2011_6', '2011_7', '2011_8', '2011_9', '2011_10', '2011_11', '2011_12', '2012_1', '2012_2', '2012_3', '2012_4', '2012_5', '2012_6', '2012_7', '2012_8', '2012_9', '2012_10', '2012_11', '2012_12', '2013_1', '2013_2', '2013_3', '2013_4', '2013_5', '2013_6', '2013_7', '2013_8', '2013_9', '2013_10', '2013_11', '2013_12'],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Número de Casos'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 1000;
+                }
+            }
+        },
+        tooltip: {
+            split: true,
+            valueSuffix: ' casos'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+
+            }
+        },
+        series: [{
+            name: '49',
+            data: [3.0, 15.0, 45.0, 30.0, 6.0, 4.0, null, 1.0, 1.0, null, null, null, 10.0, 31.0, 53.0, 40.0, 16.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 187.0, 217.0, 240.0, 314.0, 156.0, 30.0, 6.0, 3.0, 3.0, 8.0, 6.0, 10.0]
+        }, {
+            name: '34',
+            data: [6.0, 8.0, 59.0, 33.0, 9.0, 2.0, null, null, null, null, null, null, 4.0, 30.0, 77.0, 44.0, 12.0, 2.0, null, null, null, null, null, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, 201.0, 280.0, 301.0, 459.0, 176.0, 50.0, 12.0, 3.0, 4.0, 5.0, 10.0, 15.0]
+        }, {
+            name: '17',
+            data: [6.0, 23.0, 115.0, 64.0, 12.0, 1.0, null, null, null, null, 1.0, null, 22.0, 73.0, 180.0, 131.0, 19.0, 3.0, null, null, 1.0, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 455.0, 562.0, 707.0, 773.0, 368.0, 86.0, 12.0, 4.0, 9.0, 26.0, 27.0, 25.0]
+        }, {
+            name: '73',
+            data: [1.0, 5.0, 10.0, 6.0, 2.0, null, 1.0, null, null, 2.0, 1.0, null, 3.0, 4.0, 15.0, 11.0, 8.0, 1.0, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 54.0, 57.0, 74.0, 97.0, 42.0, 7.0, 2.0, 1.0, 2.0, 2.0, null, 3.0]
+        }, {
+            name: '24',
+            data: [4.0, 32.0, 117.0, 55.0, 16.0, null, null, null, null, null, 1.0, null, 15.0, 64.0, 144.0, 94.0, 20.0, 5.0, 2.0, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, 356.0, 458.0, 580.0, 613.0, 313.0, 71.0, 26.0, 6.0, 4.0, 18.0, 29.0, 26.0]
+        }, {
+            name: '31',
+            data: [6.0, 13.0, 61.0, 39.0, 15.0, null, null, null, null, null, null, null, 8.0, 35.0, 104.0, 71.0, 13.0, 3.0, null, null, null, 1.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, 322.0, 321.0, 394.0, 486.0, 249.0, 46.0, 11.0, 3.0, 1.0, 16.0, 9.0, 16.0]
+        }, {
+            name: '30',
+            data: [5.0, 24.0, 91.0, 43.0, 15.0, null, null, null, null, null, null, 1.0, 6.0, 43.0, 112.0, 76.0, 22.0, 3.0, null, null, null, 1.0, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 345.0, 383.0, 431.0, 651.0, 252.0, 52.0, 13.0, 2.0, 1.0, 15.0, 21.0, 21.0]
+        }, {
+            name: '64',
+            data: [3.0, 8.0, 20.0, 17.0, 3.0, null, null, null, 1.0, null, null, null, null, 9.0, 30.0, 13.0, 8.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 86.0, 84.0, 110.0, 163.0, 60.0, 12.0, null, 3.0, 3.0, 5.0, 2.0, 4.0]
+        }, {
+            name: '37',
+            data: [5.0, 22.0, 46.0, 26.0, 6.0, 1.0, null, null, null, null, null, null, 5.0, 43.0, 69.0, 50.0, 11.0, 3.0, null, null, 2.0, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 179.0, 229.0, 275.0, 386.0, 166.0, 39.0, 11.0, 3.0, 1.0, 9.0, 7.0, 12.0]
+        }, {
+            name: '72',
+            data: [5.0, 7.0, 12.0, 7.0, null, 2.0, null, null, null, null, null, null, 1.0, 8.0, 20.0, 7.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 51.0, 70.0, 92.0, 105.0, 49.0, 5.0, null, null, null, 1.0, 3.0, 1.0]
+        }, {
+            name: '45',
+            data: [11.0, 19.0, 55.0, 33.0, 8.0, 2.0, null, null, null, null, null, null, 11.0, 21.0, 78.0, 48.0, 11.0, 2.0, null, null, 1.0, 1.0, 2.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 170.0, 207.0, 281.0, 344.0, 153.0, 31.0, 4.0, 1.0, 2.0, 6.0, 6.0, 13.0]
+        }, {
+            name: '26',
+            data: [15.0, 25.0, 94.0, 66.0, 17.0, 2.0, null, null, null, 1.0, null, null, 6.0, 56.0, 111.0, 80.0, 18.0, 7.0, null, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 324.0, 411.0, 496.0, 687.0, 299.0, 53.0, 10.0, 3.0, 4.0, 19.0, 25.0, 22.0]
+        }, {
+            name: '43',
+            data: [5.0, 16.0, 53.0, 26.0, 7.0, null, null, null, null, null, null, null, 2.0, 26.0, 70.0, 48.0, 13.0, 2.0, null, 1.0, 1.0, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 203.0, 210.0, 299.0, 347.0, 178.0, 36.0, 12.0, null, 2.0, 7.0, 9.0, 4.0]
+        }, {
+            name: '15',
+            data: [15.0, 38.0, 126.0, 55.0, 12.0, 2.0, 1.0, null, null, null, 1.0, null, 10.0, 82.0, 160.0, 83.0, 18.0, 6.0, null, 2.0, 2.0, 1.0, 2.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 486.0, 554.0, 718.0, 888.0, 349.0, 80.0, 21.0, 3.0, 4.0, 27.0, 38.0, 16.0]
+        }, {
+            name: '48',
+            data: [6.0, 19.0, 44.0, 30.0, 3.0, null, null, null, null, null, null, null, 8.0, 26.0, 74.0, 57.0, 19.0, 4.0, null, null, null, 1.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, 167.0, 234.0, 268.0, 343.0, 169.0, 29.0, 8.0, 2.0, null, 4.0, 10.0, 6.0]
+        }, {
+            name: '29',
+            data: [10.0, 34.0, 85.0, 43.0, 9.0, 1.0, null, null, null, null, null, null, 10.0, 49.0, 99.0, 73.0, 17.0, 3.0, 1.0, null, 1.0, 1.0, 1.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 331.0, 336.0, 464.0, 555.0, 278.0, 68.0, 14.0, 2.0, 1.0, 13.0, 25.0, 19.0]
+        }, {
+            name: '8',
+            data: [4.0, 8.0, 46.0, 29.0, 11.0, 2.0, null, null, null, null, null, 1.0, 6.0, 49.0, 93.0, 37.0, 8.0, 2.0, null, null, null, 1.0, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 299.0, 334.0, 448.0, 581.0, 209.0, 42.0, 21.0, 2.0, 3.0, 27.0, 16.0, 18.0]
+        }, {
+            name: '59',
+            data: [5.0, 14.0, 28.0, 24.0, 8.0, null, null, null, null, null, null, null, 1.0, 17.0, 41.0, 19.0, 6.0, 1.0, null, null, null, null, 1.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 94.0, 126.0, 191.0, 224.0, 105.0, 15.0, 2.0, null, 5.0, 4.0, 3.0, 11.0]
+        }, {
+            name: '42',
+            data: [7.0, 20.0, 57.0, 37.0, 9.0, 1.0, 2.0, null, null, 1.0, null, null, 6.0, 26.0, 62.0, 41.0, 19.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 206.0, 211.0, 356.0, 427.0, 164.0, 33.0, 5.0, 4.0, 2.0, 12.0, 8.0, 19.0]
+        }, {
+            name: '55',
+            data: [3.0, 7.0, 26.0, 24.0, 2.0, 1.0, null, null, null, null, null, null, 6.0, 22.0, 64.0, 31.0, 9.0, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 132.0, 143.0, 210.0, 316.0, 132.0, 29.0, 6.0, null, 3.0, 9.0, 4.0, 14.0]
+        }, {
+            name: '22',
+            data: [12.0, 30.0, 96.0, 71.0, 17.0, 3.0, null, null, null, null, null, null, 13.0, 69.0, 151.0, 107.0, 31.0, 6.0, null, null, null, 1.0, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 428.0, 478.0, 568.0, 757.0, 371.0, 80.0, 23.0, 5.0, 7.0, 25.0, 20.0, 31.0]
+        }, {
+            name: '52',
+            data: [7.0, 9.0, 41.0, 28.0, 3.0, 2.0, null, null, null, null, 1.0, 1.0, 5.0, 32.0, 65.0, 35.0, 12.0, 2.0, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 194.0, 230.0, 270.0, 351.0, 147.0, 34.0, 2.0, null, 1.0, 6.0, 6.0, 10.0]
+        }, {
+            name: '50',
+            data: [4.0, 15.0, 56.0, 26.0, 7.0, null, null, null, null, null, null, null, 15.0, 34.0, 76.0, 48.0, 16.0, null, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 216.0, 236.0, 263.0, 376.0, 175.0, 26.0, 10.0, 1.0, 1.0, 3.0, 7.0, 11.0]
+        }, {
+            name: '44',
+            data: [4.0, 8.0, 62.0, 33.0, 3.0, null, 1.0, null, null, null, null, null, 5.0, 25.0, 69.0, 41.0, 7.0, null, null, 1.0, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, 154.0, 183.0, 245.0, 336.0, 164.0, 22.0, 6.0, 5.0, null, 6.0, 7.0, 14.0]
+        }, {
+            name: '53',
+            data: [3.0, 14.0, 25.0, 20.0, 11.0, null, null, 1.0, null, null, null, null, 7.0, 29.0, 59.0, 51.0, 6.0, 2.0, null, 1.0, null, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 181.0, 193.0, 304.0, 364.0, 144.0, 40.0, 7.0, null, null, 3.0, 4.0, 10.0]
+        }, {
+            name: '20',
+            data: [13.0, 29.0, 105.0, 52.0, 17.0, 1.0, 1.0, null, null, 1.0, null, null, 16.0, 63.0, 183.0, 145.0, 27.0, 6.0, null, 3.0, null, 1.0, 1.0, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, 469.0, 528.0, 582.0, 863.0, 386.0, 104.0, 35.0, 5.0, 6.0, 23.0, 34.0, 35.0]
+        }, {
+            name: '57',
+            data: [3.0, 6.0, 22.0, 19.0, 6.0, 1.0, null, null, null, null, null, null, 2.0, 24.0, 55.0, 37.0, 13.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 129.0, 179.0, 224.0, 280.0, 127.0, 21.0, 6.0, 1.0, 1.0, 5.0, 9.0, 11.0]
+        }, {
+            name: '18',
+            data: [13.0, 29.0, 149.0, 66.0, 9.0, 1.0, null, null, null, null, 1.0, null, 12.0, 56.0, 211.0, 135.0, 32.0, 4.0, null, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 500.0, 588.0, 734.0, 843.0, 377.0, 108.0, 23.0, 4.0, 7.0, 21.0, 36.0, 31.0]
+        }, {
+            name: '25',
+            data: [4.0, 28.0, 82.0, 47.0, 9.0, 1.0, null, null, null, null, null, null, 28.0, 56.0, 140.0, 105.0, 20.0, 6.0, null, 2.0, null, null, 2.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 432.0, 371.0, 516.0, 688.0, 309.0, 67.0, 13.0, 8.0, 2.0, 13.0, 20.0, 26.0]
+        }, {
+            name: '23',
+            data: [11.0, 27.0, 88.0, 54.0, 28.0, 2.0, null, null, null, null, 1.0, null, 11.0, 54.0, 133.0, 101.0, 24.0, 1.0, 1.0, 1.0, 2.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 377.0, 466.0, 518.0, 732.0, 323.0, 77.0, 14.0, 4.0, 3.0, 19.0, 26.0, 21.0]
+        }, {
+            name: '39',
+            data: [4.0, 16.0, 60.0, 32.0, 10.0, null, null, null, null, 1.0, null, null, 7.0, 31.0, 75.0, 36.0, 7.0, 2.0, null, null, null, 1.0, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 158.0, 210.0, 249.0, 331.0, 147.0, 23.0, 6.0, 2.0, 3.0, 13.0, 6.0, 12.0]
+        }, {
+            name: '36',
+            data: [2.0, 21.0, 55.0, 29.0, 14.0, 3.0, null, null, null, 1.0, null, 1.0, 8.0, 26.0, 67.0, 46.0, 9.0, 3.0, null, null, null, null, 1.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 163.0, 220.0, 283.0, 346.0, 189.0, 34.0, 10.0, 3.0, 3.0, 13.0, 12.0, 17.0]
+        }, {
+            name: '12',
+            data: [15.0, 25.0, 84.0, 45.0, 15.0, 2.0, 1.0, 1.0, 1.0, null, 1.0, null, 10.0, 61.0, 156.0, 77.0, 25.0, 2.0, 2.0, null, null, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 344.0, 362.0, 483.0, 675.0, 265.0, 61.0, 16.0, 1.0, 2.0, 23.0, 22.0, 22.0]
+        }, {
+            name: '38',
+            data: [6.0, 14.0, 49.0, 37.0, 9.0, 2.0, null, null, null, null, null, null, 9.0, 39.0, 86.0, 54.0, 8.0, 2.0, null, 1.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 202.0, 221.0, 309.0, 415.0, 176.0, 28.0, 3.0, 1.0, 1.0, 2.0, 10.0, 12.0]
+        }, {
+            name: '46',
+            data: [5.0, 12.0, 37.0, 25.0, 10.0, null, null, null, null, 1.0, 1.0, null, 3.0, 29.0, 78.0, 31.0, 3.0, 2.0, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 155.0, 187.0, 237.0, 333.0, 152.0, 33.0, 5.0, null, 2.0, 10.0, 8.0, 11.0]
+        }, {
+            name: '40',
+            data: [4.0, 19.0, 76.0, 35.0, 16.0, 2.0, null, null, null, null, null, null, 5.0, 37.0, 59.0, 50.0, 18.0, 3.0, null, null, 1.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 201.0, 282.0, 363.0, 376.0, 164.0, 35.0, 6.0, 2.0, 2.0, 4.0, 11.0, 12.0]
+        }, {
+            name: '58',
+            data: [3.0, 9.0, 34.0, 16.0, 3.0, 2.0, null, null, 1.0, null, null, null, 4.0, 13.0, 43.0, 33.0, 10.0, 1.0, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 113.0, 156.0, 194.0, 255.0, 116.0, 16.0, 4.0, 1.0, 2.0, 6.0, 7.0, 12.0]
+        }, {
+            name: '76',
+            data: [1.0, 8.0, 13.0, 1.0, 1.0, null, null, null, null, null, null, null, 2.0, 8.0, 14.0, 4.0, 1.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 51.0, 44.0, 68.0, 80.0, 27.0, 5.0, 1.0, 1.0, 1.0, 1.0, 2.0, 3.0]
+        }, {
+            name: '16',
+            data: [13.0, 40.0, 113.0, 50.0, 14.0, 3.0, null, null, null, null, null, null, 12.0, 101.0, 172.0, 106.0, 21.0, 4.0, 3.0, null, null, 1.0, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 460.0, 580.0, 727.0, 840.0, 340.0, 88.0, 22.0, 5.0, 8.0, 23.0, 32.0, 25.0]
+        }, {
+            name: '35',
+            data: [13.0, 19.0, 60.0, 37.0, 9.0, null, null, null, null, null, null, null, 10.0, 30.0, 77.0, 68.0, 6.0, 2.0, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 250.0, 259.0, 328.0, 411.0, 175.0, 50.0, 9.0, null, 5.0, 10.0, 13.0, 16.0]
+        }, {
+            name: '54',
+            data: [3.0, 11.0, 27.0, 18.0, 6.0, null, null, null, null, null, null, null, 7.0, 23.0, 68.0, 40.0, 10.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 150.0, 159.0, 240.0, 311.0, 135.0, 23.0, 5.0, 2.0, 1.0, 7.0, 8.0, 7.0]
+        }, {
+            name: '82',
+            data: [1.0, 4.0, 2.0, 1.0, 1.0, 1.0, null, null, null, null, null, null, null, 5.0, 6.0, 5.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 23.0, 34.0, 34.0, 29.0, 25.0, 5.0, null, 1.0, null, null, 2.0, 1.0]
+        }, {
+            name: '13',
+            data: [6.0, 21.0, 99.0, 59.0, 21.0, 1.0, 2.0, null, null, 1.0, null, null, 9.0, 63.0, 156.0, 92.0, 17.0, 7.0, null, null, 2.0, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, 396.0, 473.0, 658.0, 878.0, 294.0, 65.0, 17.0, null, 9.0, 11.0, 24.0, 18.0]
+        }, {
+            name: '33',
+            data: [8.0, 24.0, 57.0, 37.0, 7.0, 1.0, null, null, null, null, null, null, 6.0, 36.0, 84.0, 51.0, 16.0, 4.0, 1.0, null, null, null, null, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, 249.0, 296.0, 393.0, 514.0, 225.0, 40.0, 12.0, 3.0, 4.0, 12.0, 22.0, 23.0]
+        }, {
+            name: '4',
+            data: [1.0, 8.0, 22.0, 12.0, 8.0, null, null, null, null, null, null, null, 4.0, 31.0, 52.0, 27.0, 6.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 324.0, 323.0, 389.0, 474.0, 170.0, 75.0, 18.0, 1.0, 10.0, 21.0, 26.0, 21.0]
+        }, {
+            name: '21',
+            data: [10.0, 33.0, 117.0, 51.0, 13.0, 1.0, null, null, null, null, null, 1.0, 22.0, 67.0, 175.0, 108.0, 21.0, 5.0, 1.0, null, 2.0, 1.0, 1.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 445.0, 541.0, 587.0, 844.0, 356.0, 86.0, 23.0, 2.0, 5.0, 22.0, 29.0, 39.0]
+        }, {
+            name: '7',
+            data: [5.0, 6.0, 43.0, 17.0, 8.0, 1.0, null, null, null, null, null, null, 7.0, 45.0, 79.0, 33.0, 5.0, 1.0, null, null, 1.0, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 278.0, 276.0, 398.0, 558.0, 166.0, 53.0, 17.0, 2.0, 11.0, 21.0, 19.0, 23.0]
+        }, {
+            name: '41',
+            data: [4.0, 18.0, 36.0, 24.0, 11.0, null, null, null, null, null, null, null, 4.0, 32.0, 64.0, 31.0, 6.0, 3.0, null, null, null, 1.0, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 164.0, 202.0, 255.0, 308.0, 165.0, 38.0, 4.0, null, null, 5.0, 3.0, 13.0]
+        }, {
+            name: '77',
+            data: [2.0, null, 8.0, 5.0, null, null, null, null, null, null, null, null, null, 4.0, 16.0, 8.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 44.0, 35.0, 54.0, 54.0, 19.0, 4.0, 1.0, 1.0, null, 2.0, null, 1.0]
+        }, {
+            name: '88',
+            data: [1.0, 3.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, 2.0, 1.0, 1.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 7.0, 14.0, 22.0, 19.0, 9.0, 3.0, 1.0, 1.0, null, null, 3.0, null]
+        }, {
+            name: '28',
+            data: [7.0, 27.0, 88.0, 54.0, 17.0, 5.0, 1.0, null, null, null, null, 1.0, 8.0, 62.0, 133.0, 82.0, 22.0, 3.0, 1.0, null, null, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 360.0, 351.0, 475.0, 626.0, 271.0, 57.0, 15.0, 2.0, 4.0, 10.0, 19.0, 21.0]
+        }, {
+            name: '62',
+            data: [5.0, 12.0, 24.0, 13.0, 3.0, null, null, null, null, null, null, null, 4.0, 10.0, 31.0, 20.0, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 101.0, 115.0, 157.0, 205.0, 101.0, 19.0, 3.0, null, 3.0, 6.0, 5.0, 2.0]
+        }, {
+            name: '10',
+            data: [6.0, 13.0, 79.0, 34.0, 4.0, null, null, null, null, 1.0, 1.0, null, 9.0, 49.0, 118.0, 57.0, 13.0, 3.0, null, null, null, null, 1.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 367.0, 390.0, 561.0, 747.0, 233.0, 50.0, 16.0, 2.0, 4.0, 22.0, 16.0, 33.0]
+        }, {
+            name: '0',
+            data: [1.0, 4.0, 19.0, 6.0, 2.0, null, null, null, null, null, null, null, 1.0, 17.0, 20.0, 10.0, 4.0, null, null, null, null, null, null, 4.0, null, null, null, null, null, null, null, null, null, null, null, null, 349.0, 448.0, 498.0, 432.0, 192.0, 84.0, 44.0, 13.0, 11.0, 44.0, 35.0, 33.0]
+        }, {
+            name: '19',
+            data: [7.0, 26.0, 114.0, 70.0, 14.0, null, null, null, null, null, null, 1.0, 5.0, 77.0, 185.0, 128.0, 28.0, 3.0, 1.0, null, 2.0, null, 1.0, 4.0, null, null, null, null, null, null, null, null, null, null, null, null, 494.0, 555.0, 624.0, 814.0, 404.0, 103.0, 35.0, 6.0, 3.0, 26.0, 32.0, 33.0]
+        }, {
+            name: '67',
+            data: [2.0, 6.0, 16.0, 17.0, 1.0, null, null, null, null, null, null, null, null, 13.0, 31.0, 12.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 51.0, 81.0, 139.0, 125.0, 61.0, 12.0, 2.0, 1.0, null, 1.0, 4.0, 4.0]
+        }, {
+            name: '9',
+            data: [4.0, 19.0, 53.0, 31.0, 6.0, 1.0, null, null, null, null, 1.0, null, 7.0, 28.0, 72.0, 25.0, 13.0, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 269.0, 342.0, 462.0, 632.0, 207.0, 56.0, 13.0, 2.0, 7.0, 15.0, 17.0, 22.0]
+        }, {
+            name: '14',
+            data: [7.0, 19.0, 122.0, 49.0, 5.0, 3.0, null, null, null, null, null, null, 11.0, 80.0, 173.0, 88.0, 25.0, 2.0, 1.0, 1.0, null, 1.0, 2.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 458.0, 494.0, 714.0, 870.0, 332.0, 70.0, 13.0, 5.0, 4.0, 35.0, 18.0, 25.0]
+        }, {
+            name: '5',
+            data: [4.0, 9.0, 31.0, 28.0, 6.0, 3.0, null, null, 1.0, null, null, null, 5.0, 38.0, 57.0, 15.0, 4.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 280.0, 294.0, 375.0, 595.0, 206.0, 71.0, 25.0, 3.0, 8.0, 17.0, 26.0, 24.0]
+        }, {
+            name: '69',
+            data: [2.0, 3.0, 7.0, 5.0, 3.0, null, null, null, null, null, null, null, null, 7.0, 18.0, 17.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 41.0, 68.0, 91.0, 131.0, 46.0, 8.0, 2.0, null, null, 5.0, 3.0, 7.0]
+        }, {
+            name: '32',
+            data: [5.0, 20.0, 63.0, 43.0, 13.0, 4.0, null, null, null, null, null, null, 8.0, 48.0, 90.0, 72.0, 13.0, 2.0, null, null, null, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 303.0, 336.0, 409.0, 529.0, 249.0, 53.0, 13.0, null, 8.0, 10.0, 20.0, 19.0]
+        }, {
+            name: '65',
+            data: [3.0, 9.0, 18.0, 13.0, 4.0, 1.0, null, null, null, 1.0, null, null, 4.0, 13.0, 31.0, 25.0, 4.0, null, null, 1.0, null, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 113.0, 108.0, 174.0, 165.0, 70.0, 13.0, 3.0, 1.0, 1.0, 1.0, 4.0, 4.0]
+        }, {
+            name: '79',
+            data: [1.0, 1.0, 5.0, 6.0, 2.0, null, null, null, null, null, null, null, null, 3.0, 10.0, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 21.0, 35.0, 37.0, 69.0, 19.0, 4.0, 2.0, 1.0, 1.0, 2.0, 1.0, 3.0]
+        }, {
+            name: '51',
+            data: [5.0, 11.0, 22.0, 18.0, 10.0, null, null, null, null, null, null, null, 10.0, 14.0, 66.0, 33.0, 5.0, null, null, null, null, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 115.0, 154.0, 220.0, 320.0, 154.0, 28.0, 9.0, 2.0, 2.0, 7.0, 9.0, 11.0]
+        }, {
+            name: '27',
+            data: [4.0, 20.0, 94.0, 44.0, 10.0, 1.0, null, null, null, null, 1.0, 2.0, 14.0, 74.0, 138.0, 86.0, 18.0, 2.0, null, 1.0, null, 1.0, 1.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 322.0, 386.0, 464.0, 635.0, 303.0, 63.0, 19.0, 3.0, 4.0, 18.0, 23.0, 22.0]
+        }, {
+            name: '47',
+            data: [2.0, 29.0, 42.0, 25.0, 3.0, 1.0, null, null, null, 1.0, 1.0, null, 6.0, 34.0, 66.0, 45.0, 10.0, 2.0, null, null, 1.0, null, 1.0, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, 167.0, 228.0, 286.0, 369.0, 165.0, 36.0, 4.0, 1.0, 2.0, 11.0, 8.0, 5.0]
+        }, {
+            name: '3',
+            data: [2.0, 2.0, 23.0, 15.0, 7.0, 2.0, null, null, null, null, null, null, 4.0, 26.0, 41.0, 22.0, 3.0, 1.0, null, null, null, null, null, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, 254.0, 273.0, 381.0, 456.0, 176.0, 62.0, 23.0, 5.0, 12.0, 18.0, 29.0, 18.0]
+        }, {
+            name: '11',
+            data: [5.0, 11.0, 73.0, 35.0, 13.0, 1.0, null, null, null, null, null, null, 9.0, 60.0, 109.0, 62.0, 14.0, 2.0, null, null, null, 1.0, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 349.0, 323.0, 499.0, 564.0, 247.0, 42.0, 15.0, 4.0, 3.0, 30.0, 28.0, 16.0]
+        }, {
+            name: '6',
+            data: [4.0, 9.0, 59.0, 18.0, 6.0, null, 1.0, null, null, null, null, null, 8.0, 45.0, 59.0, 30.0, 8.0, 2.0, null, null, null, null, null, 1.0, 285.0, 973.0, 3415.0, 4076.0, 2324.0, 958.0, 220.0, 89.0, 78.0, 150.0, 450.0, 843.0, 283.0, 300.0, 419.0, 550.0, 215.0, 49.0, 25.0, 1.0, 10.0, 21.0, 35.0, 39.0]
+        }, {
+            name: 'SD',
+            data: [2.0, 7.0, 25.0, 16.0, 5.0, 3.0, null, null, null, null, null, null, 5.0, 12.0, 60.0, 26.0, 5.0, 2.0, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 183.0, 170.0, 232.0, 333.0, 134.0, 30.0, null, 1.0, 1.0, 1.0, 1.0, 2.0]
+        }, {
+            name: '66',
+            data: [3.0, 3.0, 16.0, 4.0, 3.0, null, null, null, null, null, null, null, 2.0, 11.0, 22.0, 17.0, 1.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 55.0, 78.0, 104.0, 139.0, 56.0, 15.0, 2.0, null, 1.0, 1.0, 2.0, 5.0]
+        }, {
+            name: '2',
+            data: [2.0, 4.0, 24.0, 15.0, 4.0, 2.0, null, null, null, null, null, null, 7.0, 22.0, 39.0, 19.0, 2.0, 1.0, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, 276.0, 305.0, 430.0, 460.0, 206.0, 85.0, 29.0, 8.0, 11.0, 30.0, 31.0, 17.0]
+        }, {
+            name: '60',
+            data: [2.0, 5.0, 27.0, 19.0, 6.0, null, null, null, null, null, null, null, 5.0, 22.0, 36.0, 44.0, 6.0, 4.0, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 111.0, 154.0, 203.0, 276.0, 95.0, 18.0, 5.0, null, 1.0, 1.0, 4.0, 13.0]
+        }, {
+            name: '1',
+            data: [1.0, 5.0, 26.0, 11.0, 1.0, null, null, null, null, null, null, null, 3.0, 8.0, 38.0, 15.0, 4.0, 2.0, null, null, null, null, null, null, 230.0, 819.0, 2628.0, 3445.0, 2077.0, 830.0, 183.0, 68.0, 78.0, 116.0, 388.0, 778.0, 260.0, 349.0, 408.0, 470.0, 204.0, 111.0, 35.0, 4.0, 18.0, 29.0, 35.0, 51.0]
+        }, {
+            name: '87',
+            data: [2.0, 2.0, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 12.0, 19.0, 21.0, 24.0, 4.0, 4.0, null, null, null, 2.0, 1.0, null]
+        }, {
+            name: '63',
+            data: [1.0, 5.0, 16.0, 12.0, 1.0, 1.0, null, null, null, null, null, null, 5.0, 7.0, 33.0, 23.0, 5.0, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, 68.0, 103.0, 152.0, 173.0, 70.0, 11.0, 3.0, 1.0, null, 3.0, 5.0, 5.0]
+        }, {
+            name: '61',
+            data: [2.0, 7.0, 29.0, 13.0, 4.0, 1.0, null, null, null, null, null, null, 3.0, 13.0, 25.0, 21.0, 5.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 85.0, 101.0, 130.0, 185.0, 81.0, 16.0, 4.0, null, null, 4.0, 6.0, 5.0]
+        }, {
+            name: '80',
+            data: [1.0, 2.0, 1.0, 4.0, null, null, null, null, null, null, null, null, 1.0, 1.0, 8.0, 7.0, null, null, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 30.0, 34.0, 49.0, 71.0, 23.0, 8.0, null, 2.0, null, null, null, 1.0]
+        }, {
+            name: '83',
+            data: [1.0, 1.0, 2.0, 1.0, null, null, null, null, null, null, null, null, null, 7.0, 8.0, 4.0, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 26.0, 14.0, 42.0, 49.0, 19.0, 2.0, 1.0, null, null, 4.0, null, null]
+        }, {
+            name: '71',
+            data: [null, 6.0, 8.0, 3.0, 1.0, null, null, null, null, null, null, null, 1.0, 7.0, 14.0, 12.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 31.0, 62.0, 68.0, 89.0, 40.0, 1.0, 1.0, null, null, 3.0, 5.0, 2.0]
+        }, {
+            name: '56',
+            data: [null, 8.0, 24.0, 25.0, 1.0, 1.0, null, null, null, null, null, null, 11.0, 31.0, 49.0, 39.0, 6.0, null, null, null, null, null, null, 4.0, null, null, null, null, null, null, null, null, null, null, null, null, 146.0, 190.0, 231.0, 255.0, 120.0, 28.0, 2.0, 3.0, 1.0, 1.0, 5.0, 13.0]
+        }, {
+            name: '74',
+            data: [null, 2.0, 5.0, 4.0, null, null, null, null, null, null, null, null, null, 4.0, 20.0, 9.0, 3.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 45.0, 54.0, 70.0, 82.0, 40.0, 8.0, 5.0, null, null, null, 3.0, 1.0]
+        }, {
+            name: '81',
+            data: [null, 1.0, 2.0, 3.0, null, null, null, null, null, null, null, null, null, 5.0, 8.0, 4.0, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 24.0, 31.0, 28.0, 42.0, 24.0, 1.0, null, null, 3.0, 1.0, 1.0, 2.0]
+        }, {
+            name: '68',
+            data: [null, 1.0, 5.0, 12.0, 3.0, null, null, null, null, null, null, null, 3.0, 5.0, 29.0, 16.0, 2.0, 1.0, null, 1.0, null, null, null, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, 89.0, 65.0, 104.0, 118.0, 58.0, 14.0, 5.0, null, 1.0, 2.0, 4.0, 1.0]
+        }, {
+            name: '85',
+            data: [null, 3.0, 5.0, 1.0, 3.0, null, null, null, null, null, null, null, 2.0, 2.0, 5.0, 2.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 16.0, 24.0, 24.0, 42.0, 12.0, 3.0, 3.0, 1.0, 1.0, 1.0, 2.0, 3.0]
+        }, {
+            name: '86',
+            data: [null, 1.0, 1.0, 3.0, null, null, null, null, null, null, null, null, null, 6.0, 7.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 19.0, 9.0, 19.0, 40.0, 10.0, null, null, null, null, 1.0, 1.0, 1.0]
+        }, {
+            name: '96',
+            data: [null, 1.0, null, 2.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, 2.0, 3.0, 8.0, 2.0, null, null, null, null, 1.0, null, null]
+        }, {
+            name: '91',
+            data: [null, 1.0, null, 1.0, null, null, null, null, null, null, null, null, null, 1.0, 3.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.0, 3.0, 3.0, 10.0, 2.0, 1.0, null, 1.0, null, 1.0, null, null]
+        }, {
+            name: '92',
+            data: [null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, 2.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 5.0, 12.0, 9.0, 8.0, 3.0, null, null, null, null, null, null, 1.0]
+        }, {
+            name: '70',
+            data: [null, 6.0, 19.0, 8.0, 3.0, 1.0, 1.0, null, null, null, null, null, 3.0, 7.0, 27.0, 15.0, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 71.0, 76.0, 101.0, 123.0, 43.0, 5.0, 2.0, null, null, 4.0, 3.0, 4.0]
+        }, {
+            name: '84',
+            data: [null, 2.0, 3.0, 3.0, 1.0, null, null, null, null, null, null, null, null, 1.0, 6.0, 1.0, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 15.0, 18.0, 26.0, 49.0, 13.0, 4.0, 2.0, null, null, 2.0, 1.0, 1.0]
+        }, {
+            name: '90',
+            data: [null, 1.0, 2.0, null, null, null, null, null, null, null, null, null, null, 1.0, 1.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 9.0, 4.0, 23.0, 12.0, 3.0, 2.0, null, null, null, null, null, 1.0]
+        }, {
+            name: '98',
+            data: [null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, 1.0, null, 4.0, 2.0, null, null, null, null, null, null, null]
+        }, {
+            name: '75',
+            data: [null, null, 7.0, 4.0, null, null, null, null, null, null, null, null, 2.0, 11.0, 16.0, 11.0, 2.0, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 48.0, 28.0, 64.0, 104.0, 40.0, 3.0, 1.0, 2.0, 1.0, 3.0, 3.0, 3.0]
+        }, {
+            name: '78',
+            data: [null, null, 5.0, 3.0, 2.0, null, null, null, null, null, null, 1.0, null, 5.0, 7.0, 9.0, 2.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 32.0, 43.0, 47.0, 48.0, 23.0, 10.0, null, null, 1.0, null, 2.0, null]
+        }, {
+            name: '89',
+            data: [null, null, null, null, 1.0, null, null, null, null, null, null, null, 1.0, 1.0, 3.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 8.0, 12.0, 10.0, 5.0, 6.0, 1.0, null, 1.0, null, 2.0, null, 1.0]
+        }, {
+            name: '94',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 6.0, 6.0, 6.0, 4.0, null, 1.0, null, null, null, null, null]
+        }, {
+            name: '95',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, 4.0, 2.0, 1.0, null, null, null, null, null, null, null]
+        }, {
+            name: '93',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.0, 3.0, 7.0, 3.0, 3.0, 1.0, null, null, null, null, 1.0, null]
+        }, {
+            name: '99',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 3.0, 1.0, 5.0, null, null, null, null, null, null, null, null]
+        }, {
+            name: '100',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, null, 1.0, 1.0, null, null, null, null, null, null, null]
+        }, {
+            name: '97',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, 3.0, 2.0, null, null, null, null, null, null, null]
+        }, {
+            name: '108',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null, null]
+        }, {
+            name: '103',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2.0, null, null, null, null, null, null, null, null]
+        }, {
+            name: '111',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, null, null, null, null, null, null, null, null]
+        }, {
+            name: '116',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, 1.0, null, null, null, null, null, null, null]
+        }, {
+            name: '107',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, null, null, null, null, null, null, null]
+        }, {
+            name: '104',
+            data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1.0, null, null, null, null, null, null]
+        }
+        ],
+    });
+</script>
+</body>
+</html>
