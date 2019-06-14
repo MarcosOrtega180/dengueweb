@@ -23,3 +23,9 @@ canvas {
 .card {
 	border: 1px solid rgba(0,0,0,.225) !important;
 }
+
+.containers {
+	height: 300px;
+	min-width: 310px;
+	max-width: 800px;
+}

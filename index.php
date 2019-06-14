@@ -30,7 +30,7 @@ require_once('header.php');
                 <div class="card-footer">
 
                 </div>
-                <div id="Casos_Confirmados_de_Dengue_-_Por Sexo" >
+                <div class="containers" id="Casos_Confirmados_de_Dengue_-_Por Sexo" >
 
                 </div>
                 <div class="card-footer">
@@ -51,7 +51,7 @@ require_once('header.php');
 
                 </div>
 <!--                <canvas id="myRadarChart2" width="400" height="400"></canvas>-->
-                <div id="Casos_Confirmados_de_Dengue_-_Por Edad">
+                <div class="containers" id="Casos_Confirmados_de_Dengue_-_Por Edad">
 
                 </div>
                 <div class="card-footer">
@@ -73,7 +73,7 @@ require_once('header.php');
                 <div class="card-footer">
 
                 </div>
-                <div id="Casos_Confirmados_de_Dengue_Departamentos_de_Mayor_Incidencia" >
+                <div class="containers" id="Casos_Confirmados_de_Dengue_Departamentos_de_Mayor_Incidencia" >
 
                 </div>
                 <div class="card-footer">
@@ -94,7 +94,7 @@ require_once('header.php');
 
                 </div>
                 <!--                <canvas id="myRadarChart2" width="400" height="400"></canvas>-->
-                <div id="Casos_Confirmados_de_Dengue_-_Departamentos_de_Menor_Incidencia">
+                <div class="containers" id="Casos_Confirmados_de_Dengue_-_Departamentos_de_Menor_Incidencia">
 
                 </div>
                 <div class="card-footer">
@@ -116,7 +116,7 @@ require_once('header.php');
                 <div class="card-footer">
 
                 </div>
-                <div id="Casos_Sospechosos_de_Dengue_-_Departamentos_de_Mayor_Incidencia" >
+                <div class="containers" id="Casos_Sospechosos_de_Dengue_-_Departamentos_de_Mayor_Incidencia" >
 
                 </div>
                 <div class="card-footer">
@@ -137,7 +137,7 @@ require_once('header.php');
 
                 </div>
                 <!--                <canvas id="myRadarChart2" width="400" height="400"></canvas>-->
-                <div id="Casos_Sospechosos_de_Dengue_-_Departamentos_de_Menor_Incidencia">
+                <div class="containers" id="Casos_Sospechosos_de_Dengue_-_Departamentos_de_Menor_Incidencia">
 
                 </div>
 

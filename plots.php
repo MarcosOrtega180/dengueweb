@@ -63,23 +63,23 @@
                 },
                 // Make the labels less space demanding on mobile
                 chartOptions: {
-                    xAxis: {
-                        labels: {
-                            formatter: function () {
-                                return this.value.charAt(0);
-                            }
-                        }
-                    },
-                    yAxis: {
-                        labels: {
-                            align: 'left',
-                            x: 0,
-                            y: -2
-                        },
-                        title: {
-                            text: ''
-                        }
-                    }
+                    // xAxis: {
+                    //     labels: {
+                    //         formatter: function () {
+                    //             return this.value.charAt(0);
+                    //         }
+                    //     }
+                    // },
+                    // yAxis: {
+                    //     labels: {
+                    //         align: 'left',
+                    //         x: 0,
+                    //         y: -2
+                    //     },
+                    //     title: {
+                    //         text: ''
+                    //     }
+                    // }
                 }
             }]
         }
@@ -150,23 +150,23 @@
                 },
                 // Make the labels less space demanding on mobile
                 chartOptions: {
-                    xAxis: {
-                        labels: {
-                            formatter: function () {
-                                return this.value.charAt(0);
-                            }
-                        }
-                    },
-                    yAxis: {
-                        labels: {
-                            align: 'left',
-                            x: 0,
-                            y: -2
-                        },
-                        title: {
-                            text: ''
-                        }
-                    }
+                    // xAxis: {
+                    //     labels: {
+                    //         formatter: function () {
+                    //             return this.value.charAt(0);
+                    //         }
+                    //     }
+                    // },
+                    // yAxis: {
+                    //     labels: {
+                    //         align: 'left',
+                    //         x: 0,
+                    //         y: -2
+                    //     },
+                    //     title: {
+                    //         text: ''
+                    //     }
+                    // }
                 }
             }]
         }
@@ -267,23 +267,23 @@
                 },
                 // Make the labels less space demanding on mobile
                 chartOptions: {
-                    xAxis: {
-                        labels: {
-                            formatter: function () {
-                                return this.value.charAt(0);
-                            }
-                        }
-                    },
-                    yAxis: {
-                        labels: {
-                            align: 'left',
-                            x: 0,
-                            y: -2
-                        },
-                        title: {
-                            text: ''
-                        }
-                    }
+                    // xAxis: {
+                    //     labels: {
+                    //         formatter: function () {
+                    //             return this.value.charAt(0);
+                    //         }
+                    //     }
+                    // },
+                    // yAxis: {
+                    //     labels: {
+                    //         align: 'left',
+                    //         x: 0,
+                    //         y: -2
+                    //     },
+                    //     title: {
+                    //         text: ''
+                    //     }
+                    // }
                 }
             }]
         }
@@ -369,23 +369,23 @@
                 },
                 // Make the labels less space demanding on mobile
                 chartOptions: {
-                    xAxis: {
-                        labels: {
-                            formatter: function () {
-                                return this.value.charAt(0);
-                            }
-                        }
-                    },
-                    yAxis: {
-                        labels: {
-                            align: 'left',
-                            x: 0,
-                            y: -2
-                        },
-                        title: {
-                            text: ''
-                        }
-                    }
+                    // xAxis: {
+                    //     labels: {
+                    //         formatter: function () {
+                    //             return this.value.charAt(0);
+                    //         }
+                    //     }
+                    // },
+                    // yAxis: {
+                    //     labels: {
+                    //         align: 'left',
+                    //         x: 0,
+                    //         y: -2
+                    //     },
+                    //     title: {
+                    //         text: ''
+                    //     }
+                    // }
                 }
             }]
         }
@@ -417,7 +417,7 @@
             },
             labels: {
                 formatter: function () {
-                    return this.value / 1000;
+                    return this.value;
                 }
             }
         },
@@ -481,23 +481,23 @@
                 },
                 // Make the labels less space demanding on mobile
                 chartOptions: {
-                    xAxis: {
-                        labels: {
-                            formatter: function () {
-                                return this.value.charAt(0);
-                            }
-                        }
-                    },
-                    yAxis: {
-                        labels: {
-                            align: 'left',
-                            x: 0,
-                            y: -2
-                        },
-                        title: {
-                            text: ''
-                        }
-                    }
+                    // xAxis: {
+                    //     labels: {
+                    //         formatter: function () {
+                    //             return this.value.charAt(0);
+                    //         }
+                    //     }
+                    // },
+                    // yAxis: {
+                    //     labels: {
+                    //         align: 'left',
+                    //         x: 0,
+                    //         y: -2
+                    //     },
+                    //     title: {
+                    //         text: ''
+                    //     }
+                    // }
                 }
             }]
         }
@@ -586,23 +586,23 @@
                 },
                 // Make the labels less space demanding on mobile
                 chartOptions: {
-                    xAxis: {
-                        labels: {
-                            formatter: function () {
-                                return this.value.charAt(0);
-                            }
-                        }
-                    },
-                    yAxis: {
-                        labels: {
-                            align: 'left',
-                            x: 0,
-                            y: -2
-                        },
-                        title: {
-                            text: ''
-                        }
-                    }
+                    // xAxis: {
+                    //     labels: {
+                    //         formatter: function () {
+                    //             return this.value.charAt(0);
+                    //         }
+                    //     }
+                    // },
+                    // yAxis: {
+                    //     labels: {
+                    //         align: 'left',
+                    //         x: 0,
+                    //         y: -2
+                    //     },
+                    //     title: {
+                    //         text: ''
+                    //     }
+                    // }
                 }
             }]
         }
