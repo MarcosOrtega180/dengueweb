@@ -30,7 +30,7 @@ require_once('header.php');
                 <div class="card-footer">
 
                 </div>
-                <div class="containers" id="Casos_Confirmados_de_Dengue_-_Por Sexo" >
+                    <div class="containers" id="Casos_Confirmados_de_Dengue_-_Por Sexo" >
 
                 </div>
                 <div class="card-footer">
