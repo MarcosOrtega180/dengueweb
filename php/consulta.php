@@ -13,7 +13,8 @@ $arr2 = pg_fetch_all($result);
 //print_r($arr2[0]["id"]);
 //print_r($arr2[0]["descripcion"]);
 //print_r($arr2[0]["chart_id"]);
-//print_r( $arr2[1]["categorias"] );
+//print_r( $arr2[5]["categorias"] );
+//print_r( $arr2[6]["categorias"] );
 
 
 ?>
