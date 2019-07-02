@@ -654,11 +654,14 @@ require("php/consulta.php");
             }
         },
 
-        series: [{'data': [{'x': 0,
+        series: [{
+            'data': [{
+                'x': 0,
                 'y': 4525.07,
                 'z': 5028,
                 'name': '0-AS',
-                'country': 'ASUNCION'},
+                'country': 'ASUNCION'
+            },
                 {'x': 1, 'y': 12.55, 'z': 1233, 'name': '1-CO', 'country': 'CONCEPCION'},
                 {'x': 2, 'y': 19.71, 'z': 140, 'name': '2-SA', 'country': 'SAN PEDRO'},
                 {'x': 3, 'y': 56.56, 'z': 305, 'name': '3-CO', 'country': 'CORDILLERA'},
@@ -673,18 +676,24 @@ require("php/consulta.php");
                 {'x': 12, 'y': 7.09, 'z': 13, 'name': '12-ÑE', 'country': 'ÑEEMBUCU'},
                 {'x': 13, 'y': 11.71, 'z': 603, 'name': '13-AM', 'country': 'AMAMBAY'},
                 {'x': 14, 'y': 13.56, 'z': 61, 'name': '14-CA', 'country': 'CANINDEYU'},
-                {'x': 15,
+                {
+                    'x': 15,
                     'y': 1.51,
                     'z': 171,
                     'name': '15-PR',
-                    'country': 'PRESIDENTE HAYES'},
+                    'country': 'PRESIDENTE HAYES'
+                },
                 {'x': 16, 'y': 0.62, 'z': 7, 'name': '16-BO', 'country': 'BOQUERÓN'},
-                {'x': 17, 'y': 0.19, 'z': 7, 'name': '17-AL', 'country': 'ALTO PARAGUAY'}]},
-            {'data': [{'x': 0,
+                {'x': 17, 'y': 0.19, 'z': 7, 'name': '17-AL', 'country': 'ALTO PARAGUAY'}]
+        },
+            {
+                'data': [{
+                    'x': 0,
                     'y': 4517.33,
                     'z': 20578,
                     'name': '0-AS',
-                    'country': 'ASUNCION'},
+                    'country': 'ASUNCION'
+                },
                     {'x': 1, 'y': 12.74, 'z': 804, 'name': '1-CO', 'country': 'CONCEPCION'},
                     {'x': 2, 'y': 19.96, 'z': 290, 'name': '2-SA', 'country': 'SAN PEDRO'},
                     {'x': 3, 'y': 57.32, 'z': 1163, 'name': '3-CO', 'country': 'CORDILLERA'},
@@ -699,17 +708,21 @@ require("php/consulta.php");
                     {'x': 12, 'y': 7.14, 'z': 102, 'name': '12-ÑE', 'country': 'ÑEEMBUCU'},
                     {'x': 13, 'y': 11.91, 'z': 2774, 'name': '13-AM', 'country': 'AMAMBAY'},
                     {'x': 14, 'y': 13.88, 'z': 777, 'name': '14-CA', 'country': 'CANINDEYU'},
-                    {'x': 15,
-                        'y': 1.54,
+                    {
+                        'x': 15, 'y': 1.54,
                         'z': 1947,
                         'name': '15-PR',
-                        'country': 'PRESIDENTE HAYES'},
+                        'country': 'PRESIDENTE HAYES'
+                    },
                     {'x': 16, 'y': 0.63, 'z': 64, 'name': '16-BO', 'country': 'BOQUERÓN'},
-                    {'x': 17,
+                    {
+                        'x': 17,
                         'y': 0.19,
                         'z': 58,
                         'name': '17-AL',
-                        'country': 'ALTO PARAGUAY'}]}]
+                        'country': 'ALTO PARAGUAY'
+                    }]
+            }]
 
     });
 </script>

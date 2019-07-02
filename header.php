@@ -70,9 +70,12 @@ $nombre_sitio = "Data-Dengue";
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio
+                    <a class="nav-link" href="/comidengo_plots">Inicio
                         <span class="sr-only">(current)</span>
                     </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/comidengo_plots/mapas.php">Mapas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">El Proyecto</a>
