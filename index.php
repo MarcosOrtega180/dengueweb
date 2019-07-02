@@ -5,68 +5,65 @@ require_once('header.php');
     <!-- Page Content -->
 
 
+    <!-- Jumbotron Header -->
+    <!--        <div class="card borde_1">-->
+    <!--            <div class="card-footer">-->
+    <!---->
+    <!--            </div>-->
+    <!--            <div class="card-footer">-->
+    <!--                <button type="button" class="btn" data-container="body" data-toggle="popover"-->
+    <!--                        data-placement="bottom"-->
+    <!--                        data-content="Ranking de importancia de cada departamento en cuanto a número de casos notificados.">-->
+    <!--                    <i class="fa fa-info-circle"></i>-->
+    <!--                </button>-->
+    <!--            </div>-->
+    <!--        </div>-->
 
-        <!-- Jumbotron Header -->
-        <!--        <div class="card borde_1">-->
-        <!--            <div class="card-footer">-->
-        <!---->
-        <!--            </div>-->
-        <!--            <div class="card-footer">-->
-        <!--                <button type="button" class="btn" data-container="body" data-toggle="popover"-->
-        <!--                        data-placement="bottom"-->
-        <!--                        data-content="Ranking de importancia de cada departamento en cuanto a número de casos notificados.">-->
-        <!--                    <i class="fa fa-info-circle"></i>-->
-        <!--                </button>-->
-        <!--            </div>-->
-        <!--        </div>-->
-
-
-        <div class="row text-center">
-            <div class="col-lg-6 col-md-6 mb-6">
-                <div class="card">
-                    <div class="card-footer">
-
-                    </div>
-
-                </div>
-                <div class="containers" id="Casos_Confirmados_de_Dengue_-_Años_2010_a_2013" style="height: 400px; min-width: 310px; max-width: 600px; margin: 0 auto"></div>
+    <h3 class="tituo_1">Situación epidemiológica</h3>
+    <div class="row text-center">
+        <div class="col-lg-6 col-md-6 mb-6">
+            <div class="card">
                 <div class="card-footer">
 
-                    <div>
-                        <button type="button" class="btn" data-container="body" data-toggle="popover"
-                                data-placement="bottom"
-                                data-content="Aqui informacion sobre los datos del grafico.">
-                            <i class="fa fa-info-circle"></i>
-                        </button>
-                    </div>
                 </div>
+
             </div>
+            <div class="containers" id="Casos_Confirmados_de_Dengue_-_Años_2010_a_2013"
+                 style="height: 400px; min-width: 310px; max-width: 600px; margin: 0 auto"></div>
+            <div class="card-footer">
 
-            <div class="col-lg-6 col-md-6 mb-6">
-                <div class="card">
-                    <div class="card-footer">
-
-                    </div>
-
-                </div>
-                <div id="burbujas" style="height: 400px; min-width: 310px; max-width: 600px; margin: 0 auto"></div>
-                <div class="card-footer">
-
-                    <div>
-                        <button type="button" class="btn" data-container="body" data-toggle="popover"
-                                data-placement="bottom"
-                                data-content="Aqui informacion sobre los datos del grafico.">
-                            <i class="fa fa-info-circle"></i>
-                        </button>
-                    </div>
+                <div>
+                    <button type="button" class="btn" data-container="body" data-toggle="popover"
+                            data-placement="bottom"
+                            data-content="Aqui informacion sobre los datos del grafico.">
+                        <i class="fa fa-info-circle"></i>
+                    </button>
                 </div>
             </div>
         </div>
 
+        <div class="col-lg-6 col-md-6 mb-6">
+            <div class="card">
+                <div class="card-footer">
+
+                </div>
+
+            </div>
+            <div id="burbujas" style="height: 400px; min-width: 310px; max-width: 600px; margin: 0 auto"></div>
+            <div class="card-footer">
+
+                <div>
+                    <button type="button" class="btn" data-container="body" data-toggle="popover"
+                            data-placement="bottom"
+                            data-content="Aqui informacion sobre los datos del grafico.">
+                        <i class="fa fa-info-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-
-    <h3 class="tituo_1">Situación epidemiológica</h3>
     <div class="row text-center">
         <div class="col-lg-6 col-md-6 mb-6">
             <div class="card">

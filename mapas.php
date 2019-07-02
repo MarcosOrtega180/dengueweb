@@ -7,7 +7,7 @@ require_once('header.php');
             <div class="col-lg-6 col-md-6 mb-6">
                 <div class="card">
                     <div class="card-footer">
-                        <h3>Total de Casos de Dengue Confirmados en el año 2013</h3>
+                        <h3>Total de Casos Confirmados de Dengue - Año 2013</h3>
                     </div>
 
                 </div>
@@ -34,7 +34,7 @@ require_once('header.php');
                     }</style>
                 <div class="embed-container">
                     <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                            title="Total de Casos de Dengue Confirmados en el año 2013"
+                            title="Total de Casos de Dengue Confirmados en el Año 2013"
                             src="//www.arcgis.com/apps/Embed/index.html?webmap=fc068b0b277f4d12a03902c843a1aad2&extent=-69.2828,-28.6615,-46.2994,-18.3021&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legendlayers=true&disable_scroll=true&theme=light"></iframe>
                 </div>
                 <div class="card-footer">
@@ -42,7 +42,8 @@ require_once('header.php');
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
                                 data-placement="bottom"
-                                data-content="Aqui informacion sobre los datos del grafico.">
+                                data-content="En cada departamento, su color de fondo indica el número de casos confirmados en el año indicado. El tamaño de cada cuadrado es proporcional a este número de casos confirmados, y la tonalidad de color del mismo se refiere a la población departamental.
+Para más detalles, haga click en >> y luego en > para ver la leyenda, y en << para ocultarla.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
@@ -55,7 +56,7 @@ require_once('header.php');
             <div class="col-lg-6 col-md-6 mb-6">
                 <div class="card">
                     <div class="card-footer">
-                        <h3>Total de Casos de Dengue Sospechosos en 2013</h3>
+                        <h3>Total de Casos Sospechosos de Dengue - Año 2013</h3>
                     </div>
 
                 </div>
@@ -90,7 +91,8 @@ require_once('header.php');
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
                                 data-placement="bottom"
-                                data-content="Aqui informacion sobre los datos del grafico.">
+                                data-content="En cada departamento, su color de fondo indica el número de casos sospechosos en el año indicado.
+Para más detalles, haga click en >>, luego en > para ver la leyenda, y en << para ocultarla.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
@@ -103,7 +105,7 @@ require_once('header.php');
             <div class="col-lg-6 col-md-6 mb-6">
                 <div class="card">
                     <div class="card-footer">
-                        <h3>Incidencia del dengue - año 2013</h3>
+                        <h3>Incidencia de Dengue - Año 2013</h3>
                     </div>
 
                 </div>
@@ -138,7 +140,7 @@ require_once('header.php');
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
                                 data-placement="bottom"
-                                data-content="Aqui informacion sobre los datos del grafico.">
+                                data-content="En cada departamento, la incidencia fue calculada como el número de casos confirmados dividido por la población, en el año indicado.Para más detalles, haga click en >>, luego en > para ver la leyenda, y en << para ocultarla.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
