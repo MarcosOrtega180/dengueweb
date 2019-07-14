@@ -55,7 +55,7 @@ require_once('header.php');
                 <div>
                     <button type="button" class="btn" data-container="body" data-toggle="popover"
                             data-placement="bottom"
-                            data-content="Aqui informacion sobre los datos del grafico.">
+                            data-content="Haga zoom seleccionando un área rectangular dentro del gráfico, de acercarse a los puntos. Presione Reset zoom para restaurar.">
                         <i class="fa fa-info-circle"></i>
                     </button>
                 </div>
@@ -63,7 +63,7 @@ require_once('header.php');
         </div>
     </div>
 
-
+    <br/>
     <div class="row text-center">
         <div class="col-lg-6 col-md-6 mb-6">
             <div class="card">
@@ -261,7 +261,11 @@ require_once('header.php');
     <!--        </div>-->
     <!---->
     <!--    </div>-->
-
+    <br/>
+    <div class="text-center">
+        <h6>Fuente: Datos proveídos por DGVS - Ministerio de Salud Pública y Bienestar Social, y depurados por el
+            proyecto Conacyt PINV15-706 COMIDENCO.</h6>
+    </div>
 
 <?php
 require_once('plots.php');

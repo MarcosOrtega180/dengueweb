@@ -140,7 +140,7 @@ Para más detalles, haga click en >>, luego en > para ver la leyenda, y en << pa
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
                                 data-placement="bottom"
-                                data-content="En cada departamento, la incidencia fue calculada como el número de casos confirmados dividido por la población, en el año indicado.Para más detalles, haga click en >>, luego en > para ver la leyenda, y en << para ocultarla.">
+                                data-content="En cada departamento, la incidencia fue calculada como el número de casos confirmados dividido por la población, en el año indicado. Para más detalles, haga click en >>, luego en > para ver la leyenda, y en << para ocultarla.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
