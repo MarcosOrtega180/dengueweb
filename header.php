@@ -38,8 +38,9 @@ $nombre_sitio = "Data-Dengue";
 </head>
 <body>
 <!--    highcharts-->
-<script src="code/highcharts.js"></script>
+
 <script src="code/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
@@ -70,12 +71,12 @@ $nombre_sitio = "Data-Dengue";
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/comidengo_plots">Inicio
+                    <a class="nav-link" href="index.php">Inicio
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/comidengo_plots/mapas.php">Mapas</a>
+                    <a class="nav-link" href="mapas.php">Mapas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">El Proyecto</a>
