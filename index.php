@@ -35,7 +35,9 @@ require_once('header.php');
                 <div>
                     <button type="button" class="btn" data-container="body" data-toggle="popover"
                             data-placement="bottom"
-                            data-content="Aqui informacion sobre los datos del grafico.">
+                            data-content="Haga click en los items para quitarlos o agregarlos de la gráfica, en el ícono
+                            de la parte superior derecha encontrará más opciones como ver en pantalla completa y distintas
+                            opciones de descarga.">
                         <i class="fa fa-info-circle"></i>
                     </button>
                 </div>
@@ -78,7 +80,9 @@ require_once('header.php');
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
                                 data-placement="bottom"
-                                data-content="Aqui informacion sobre los datos del grafico.">
+                                data-content="Haga click en los items para quitarlos o agregarlos de la gráfica, en el ícono
+                            de la parte superior derecha encontrará más opciones como ver en pantalla completa y distintas
+                            opciones de descarga.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
@@ -97,7 +101,9 @@ require_once('header.php');
                 <div class="card-footer">
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
-                                data-placement="bottom" data-content="Aqui informacion sobre los datos del grafico.">
+                                data-placement="bottom" data-content="Haga click en los items para quitarlos o agregarlos de la gráfica, en el ícono
+                            de la parte superior derecha encontrará más opciones como ver en pantalla completa y distintas
+                            opciones de descarga.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
@@ -121,7 +127,9 @@ require_once('header.php');
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
                                 data-placement="bottom"
-                                data-content="Aqui informacion sobre los datos del grafico.">
+                                data-content="Haga click en los items para quitarlos o agregarlos de la gráfica, en el ícono
+                            de la parte superior derecha encontrará más opciones como ver en pantalla completa y distintas
+                            opciones de descarga.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
@@ -140,7 +148,9 @@ require_once('header.php');
                 <div class="card-footer">
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
-                                data-placement="bottom" data-content="Aqui informacion sobre los datos del grafico.">
+                                data-placement="bottom" data-content="Haga click en los items para quitarlos o agregarlos de la gráfica, en el ícono
+                            de la parte superior derecha encontrará más opciones como ver en pantalla completa y distintas
+                            opciones de descarga.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
@@ -164,7 +174,9 @@ require_once('header.php');
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
                                 data-placement="bottom"
-                                data-content="Aqui informacion sobre los datos del grafico.">
+                                data-content="Haga click en los items para quitarlos o agregarlos de la gráfica, en el ícono
+                            de la parte superior derecha encontrará más opciones como ver en pantalla completa y distintas
+                            opciones de descarga.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
@@ -184,7 +196,9 @@ require_once('header.php');
                 <div class="card-footer">
                     <div>
                         <button type="button" class="btn" data-container="body" data-toggle="popover"
-                                data-placement="bottom" data-content="Aqui informacion sobre los datos del grafico.">
+                                data-placement="bottom" data-content="Haga click en los items para quitarlos o agregarlos de la gráfica, en el ícono
+                            de la parte superior derecha encontrará más opciones como ver en pantalla completa y distintas
+                            opciones de descarga.">
                             <i class="fa fa-info-circle"></i>
                         </button>
                     </div>
@@ -231,7 +245,9 @@ require_once('header.php');
     <!--                    <div>-->
     <!--                        <button type="button" class="btn" data-container="body" data-toggle="popover"-->
     <!--                                data-placement="bottom"-->
-    <!--                                data-content="Aqui informacion sobre los datos del grafico.">-->
+    <!--                                data-content="Haga click en los items para quitarlos o agregarlos de la gráfica, en el ícono
+                            de la parte superior derecha encontrará más opciones como ver en pantalla completa y distintas
+                            opciones de descarga.">-->
     <!--                            <i class="fa fa-info-circle"></i>-->
     <!--                        </button>-->
     <!--                    </div>-->
@@ -251,7 +267,9 @@ require_once('header.php');
     <!--                    <div>-->
     <!--                        <button type="button" class="btn" data-container="body" data-toggle="popover"-->
     <!--                                data-placement="bottom"-->
-    <!--                                data-content="Aqui informacion sobre los datos del grafico.">-->
+    <!--                                data-content="Haga click en los items para quitarlos o agregarlos de la gráfica, en el ícono
+                            de la parte superior derecha encontrará más opciones como ver en pantalla completa y distintas
+                            opciones de descarga.">-->
     <!--                            <i class="fa fa-info-circle"></i>-->
     <!--                        </button>-->
     <!--                    </div>-->
