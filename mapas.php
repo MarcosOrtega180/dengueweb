@@ -51,8 +51,6 @@ Para más detalles, haga click en >> y luego en > para ver la leyenda, y en << p
             </div>
 
 
-
-
             <div class="col-lg-6 col-md-6 mb-6">
                 <div class="card">
                     <div class="card-footer">
@@ -100,6 +98,7 @@ Para más detalles, haga click en >>, luego en > para ver la leyenda, y en << pa
             </div>
         </div>
         <br/>
+
         <div class="row text-center">
 
             <div class="col-lg-6 col-md-6 mb-6">
@@ -146,6 +145,53 @@ Para más detalles, haga click en >>, luego en > para ver la leyenda, y en << pa
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-6 col-md-6 mb-6">
+                <div class="card">
+                    <div class="card-footer">
+                        <h3>Impacto Geográfico del Dengue - 2013</h3>
+                        Número de casos por kilómetro cuadrado.
+                    </div>
+
+                </div>
+                <style>.embed-container {
+                        position: relative;
+                        padding-bottom: 80%;
+                        height: 0;
+                        max-width: 100%;
+                    }
+
+                    .embed-container iframe, .embed-container object, .embed-container iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    small {
+                        position: absolute;
+                        z-index: 40;
+                        bottom: 0;
+                        margin-bottom: -15px;
+                    }</style>
+                <div class="embed-container">
+                    <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                            title=" Impacto Geográfico del Dengue - 2013"
+                            src="//www.arcgis.com/apps/Embed/index.html?webmap=3bba69aafd4b4ec099cc57d6fc70bcc3&extent=-67.5935,-28.9256,-44.6101,-18.5881&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legendlayers=true&disable_scroll=true&theme=light"></iframe>
+                </div>
+                <div class="card-footer">
+
+                    <div>
+                        <button type="button" class="btn" data-container="body" data-toggle="popover"
+                                data-placement="bottom"
+                                data-content="En cada departamento, el Impacto Geográfico fue calculado multiplicando la incidencia por la densidad poblacional, en el año indicado. Para más detalles, haga click en >>, luego en > para ver la leyenda, y en << para ocultarla.">
+                            <i class="fa fa-info-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
